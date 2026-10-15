@@ -1,0 +1,152 @@
+{
+  "moods": [
+    {
+      "id": "epico_heroico",
+      "label": "Épico / Heroico",
+      "keywords": ["herói", "heroi", "batalha", "guerra", "vitória", "vitoria", "épico", "epico", "lenda", "conquista", "triunfo", "coragem", "gigante", "destino", "impossível", "impossivel", "supera", "ascensão", "ascensao"],
+      "genres": ["Orchestral Epic", "Cinematic Trailer", "Hybrid Orchestral"],
+      "tempoBpm": "90-130",
+      "instrumentation": "Cordas amplas, percussão taiko/orquestral, metais, coro",
+      "royaltyFreeSearch": ["epic orchestral trailer", "heroic cinematic", "triumphant orchestral"],
+      "wellKnownReferences": [
+        { "title": "Time", "artist": "Hans Zimmer (Inception)", "why": "crescendo orquestral que se resolve em grandiosidade" },
+        { "title": "Now We Are Free", "artist": "Hans Zimmer & Lisa Gerrard (Gladiator)", "why": "épico com peso emocional" },
+        { "title": "Requiem for a Tower", "artist": "Two Steps From Hell", "why": "referência clássica de trailer épico" }
+      ]
+    },
+    {
+      "id": "tenso_suspense",
+      "label": "Tenso / Suspense",
+      "keywords": ["medo", "perigo", "suspense", "tensão", "tensao", "sombra", "persegui", "foge", "esconde", "silêncio", "silencio", "escuro", "ameaça", "ameaca", "acelerado", "respiração", "respiracao"],
+      "genres": ["Dark Ambient", "Suspense Thriller", "Minimal Tension"],
+      "tempoBpm": "60-100 (irregular)",
+      "instrumentation": "Drones, cordas dissonantes, percussão pontuada, texturas eletrônicas",
+      "royaltyFreeSearch": ["dark tension underscore", "thriller suspense drone", "horror ambient tension"],
+      "wellKnownReferences": [
+        { "title": "Mombasa", "artist": "Hans Zimmer (Inception)", "why": "tensão crescente com pulso rítmico" },
+        { "title": "In the House - In a Heartbeat", "artist": "Mica Levi (Under the Skin)", "why": "estranheza e desconforto minimalista" }
+      ]
+    },
+    {
+      "id": "romantico",
+      "label": "Romântico",
+      "keywords": ["amor", "beijo", "paixão", "paixao", "romance", "casal", "carinho", "abraço", "abraco", "saudade", "coração", "coracao", "encontro", "olhar"],
+      "genres": ["Romantic Piano", "Acoustic Ballad", "Neoclassical"],
+      "tempoBpm": "60-90",
+      "instrumentation": "Piano, cordas, guitarra acústica leve",
+      "royaltyFreeSearch": ["romantic piano strings", "tender acoustic love theme"],
+      "wellKnownReferences": [
+        { "title": "A Thousand Years", "artist": "Christina Perri", "why": "balada romântica amplamente reconhecida" },
+        { "title": "Comptine d'un autre été", "artist": "Yann Tiersen", "why": "piano delicado e nostálgico" }
+      ]
+    },
+    {
+      "id": "melancolico",
+      "label": "Melancólico / Triste",
+      "keywords": ["triste", "perda", "luto", "chora", "solidão", "solidao", "vazio", "despedida", "adeus", "sofrimento", "dor", "lágrima", "lagrima", "nostalgia amarga"],
+      "genres": ["Sad Piano", "Ambient Melancholy", "Modern Classical"],
+      "tempoBpm": "50-75",
+      "instrumentation": "Piano solo, cordas suaves, pads etéreos",
+      "royaltyFreeSearch": ["sad emotional piano", "melancholic ambient strings"],
+      "wellKnownReferences": [
+        { "title": "Experience", "artist": "Ludovico Einaudi", "why": "piano melancólico e contemplativo, muito usado em cenas dramáticas" },
+        { "title": "Hoppípolla", "artist": "Sigur Rós", "why": "beleza triste e crescente" }
+      ]
+    },
+    {
+      "id": "alegre_animado",
+      "label": "Alegre / Animado",
+      "keywords": ["festa", "diversão", "diversao", "sorriso", "riso", "comemora", "celebra", "amigos", "verão", "verao", "dança", "danca", "energia positiva", "liberdade"],
+      "genres": ["Upbeat Pop", "Indie Folk", "Feel-Good Acoustic"],
+      "tempoBpm": "110-140",
+      "instrumentation": "Ukulele, palmas, bateria leve, sintetizadores brilhantes",
+      "royaltyFreeSearch": ["upbeat happy indie pop", "feel good ukulele", "fun summer acoustic"],
+      "wellKnownReferences": [
+        { "title": "Walking on Sunshine", "artist": "Katrina & The Waves", "why": "energia positiva instantânea" },
+        { "title": "Good Life", "artist": "OneRepublic", "why": "clima leve e celebrativo" }
+      ]
+    },
+    {
+      "id": "nostalgico",
+      "label": "Nostálgico",
+      "keywords": ["lembrança", "lembranca", "infância", "infancia", "memória", "memoria", "passado", "antigamente", "recordação", "recordacao", "reencontro"],
+      "genres": ["Nostalgic Synth", "Lo-fi", "Warm Acoustic"],
+      "tempoBpm": "70-100",
+      "instrumentation": "Synths analógicos quentes, guitarra clean, texturas vinil/lo-fi",
+      "royaltyFreeSearch": ["nostalgic synth wave", "warm lo-fi memories", "retro dreamy acoustic"],
+      "wellKnownReferences": [
+        { "title": "Time to Say Goodbye", "artist": "M83 (referência de synth nostálgico)", "why": "atmosfera nostálgica e cinematográfica" },
+        { "title": "The Night We Met", "artist": "Lord Huron", "why": "clima nostálgico e introspectivo, muito usado em flashbacks" }
+      ]
+    },
+    {
+      "id": "sombrio_misterioso",
+      "label": "Sombrio / Misterioso",
+      "keywords": ["mistério", "misterio", "segredo", "enigma", "sombrio", "estranho", "oculto", "investiga", "noite", "sombra longa", "conspiração", "conspiracao"],
+      "genres": ["Dark Cinematic", "Mystery Ambient", "Noir"],
+      "tempoBpm": "60-95",
+      "instrumentation": "Contrabaixo, piano dissonante, texturas noir, sinos distantes",
+      "royaltyFreeSearch": ["dark mystery cinematic", "noir ambient underscore"],
+      "wellKnownReferences": [
+        { "title": "Reckoner", "artist": "Radiohead", "why": "clima misterioso e introspectivo" },
+        { "title": "Peer Gynt - In the Hall of the Mountain King", "artist": "Edvard Grieg", "why": "tensão crescente clássica associada a mistério/perigo" }
+      ]
+    },
+    {
+      "id": "divertido_excentrico",
+      "label": "Divertido / Excêntrico",
+      "keywords": ["engraçado", "engracado", "comédia", "comedia", "bizarro", "estranho e divertido", "cômico", "comico", "trapalhada", "confusão", "confusao"],
+      "genres": ["Comedy Quirky", "Playful Orchestral", "Novelty"],
+      "tempoBpm": "100-135",
+      "instrumentation": "Pizzicato, xilofone, ukulele, sopros brincalhões",
+      "royaltyFreeSearch": ["quirky comedy underscore", "playful pizzicato funny"],
+      "wellKnownReferences": [
+        { "title": "Mr. Blue Sky", "artist": "Electric Light Orchestra", "why": "divertido e cheio de personalidade" }
+      ]
+    },
+    {
+      "id": "acao_adrenalina",
+      "label": "Ação / Adrenalina",
+      "keywords": ["corrida", "luta", "explosão", "explosao", "perseguição", "perseguicao", "adrenalina", "velocidade", "combate", "urgência", "urgencia"],
+      "genres": ["Action Trailer", "Electronic Rock Hybrid", "Driving Percussion"],
+      "tempoBpm": "130-170",
+      "instrumentation": "Bateria eletrônica pesada, baixo distorcido, sintetizadores agressivos",
+      "royaltyFreeSearch": ["action trailer driving percussion", "high energy electronic rock chase"],
+      "wellKnownReferences": [
+        { "title": "Radioactive", "artist": "Imagine Dragons", "why": "energia pesada e moderna, comum em trailers de ação" }
+      ]
+    },
+    {
+      "id": "sonhador_etereo",
+      "label": "Sonhador / Etéreo",
+      "keywords": ["sonho", "flutua", "etéreo", "eterio", "surreal", "imaginação", "imaginacao", "fantasia", "leveza", "flutuando", "nuvem"],
+      "genres": ["Ambient Dream Pop", "Ethereal Pads", "Cinematic Ambient"],
+      "tempoBpm": "60-85",
+      "instrumentation": "Pads etéreos, vozes reverberadas, sinos, texturas atmosféricas",
+      "royaltyFreeSearch": ["dreamy ethereal ambient pads", "surreal cinematic atmosphere"],
+      "wellKnownReferences": [
+        { "title": "Heaven or Las Vegas", "artist": "Cocteau Twins", "why": "textura etérea e onírica" }
+      ]
+    },
+    {
+      "id": "corporativo_inspirador",
+      "label": "Corporativo / Inspirador",
+      "keywords": ["conquista profissional", "motivação", "motivacao", "inovação", "inovacao", "crescimento", "futuro", "tecnologia", "empreender", "propósito", "proposito", "transformação", "transformacao"],
+      "genres": ["Corporate Uplifting", "Motivational Pop Instrumental", "Modern Inspiring"],
+      "tempoBpm": "100-125",
+      "instrumentation": "Piano brilhante, bateria limpa, cordas motivacionais, synths modernos",
+      "royaltyFreeSearch": ["corporate inspiring uplifting", "motivational technology background"],
+      "wellKnownReferences": [
+        { "title": "Something for Nothing (instrumental feel)", "artist": "referência de trilha corporativa motivacional", "why": "energia positiva e propositiva, estilo comum em vídeos institucionais" }
+      ]
+    }
+  ],
+  "royaltyFreeSources": [
+    { "name": "YouTube Audio Library", "url": "https://www.youtube.com/audiolibrary", "license": "Gratuito, algumas faixas exigem apenas atribuição" },
+    { "name": "Pixabay Music", "url": "https://pixabay.com/music/", "license": "Licença Pixabay, uso comercial livre" },
+    { "name": "Free Music Archive", "url": "https://freemusicarchive.org/", "license": "Licenças variam por faixa (Creative Commons)" },
+    { "name": "Epidemic Sound", "url": "https://www.epidemicsound.com/", "license": "Assinatura paga, licenciamento amplo para criadores" },
+    { "name": "Artlist", "url": "https://artlist.io/", "license": "Assinatura paga, licença perpétua por membro" },
+    { "name": "Uppbeat", "url": "https://uppbeat.io/", "license": "Gratuito com atribuição ou assinatura sem atribuição" }
+  ]
+}

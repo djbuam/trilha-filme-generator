@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Trilha filme generator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/style.css" />
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+<!-- ===================== TELA DE LOGIN / LANDING ===================== -->
+<section id="loginScreen" class="screen">
+
+  <nav class="landing-nav">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="/assets/logo-mark.png" alt="" class="logo-img" />
+      </span>
+      <span class="brand-name">Trilha<br /><em>filme generator</em></span>
+    </a>
+    <div class="landing-nav-links">
+      <a href="#howItWorks" class="js-scroll">Como funciona</a>
+      <a href="#features" class="js-scroll">Recursos</a>
+    </div>
+    <div class="landing-nav-cta">
+      <a href="#loginCard" class="btn-ghost js-scroll">Entrar</a>
+      <a href="#loginCard" class="btn-primary btn-small js-scroll">Começar grátis</a>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Ideias grandes pedem trilhas incríveis</p>
+      <h1>A trilha certa<br />para o seu <span class="accent">filme.</span></h1>
+      <p class="hero-subtitle">Envie o roteiro ou storyboard do seu vídeo e receba sugestões de trilha sonora em segundos — de bancos livres de direitos autorais a referências conhecidas, prontas pra ouvir no YouTube.</p>
+      <div class="hero-actions">
+        <a href="#loginCard" class="btn-primary js-scroll">Começar grátis <span aria-hidden="true">→</span></a>
+        <a href="#howItWorks" class="btn-ghost btn-with-icon js-scroll">
+          <span class="play-dot" aria-hidden="true">▶</span> Ver como funciona
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <img class="hero-photo" src="/assets/hero-desk.jpg" alt="" />
+    </div>
+  </header>
+
+  <section id="features" class="feature-row">
+    <div class="feature">
+      <span class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </span>
+      <div>
+        <h4>Sugestões em segundos</h4>
+        <p>Cole o roteiro e receba ideias de trilha na hora.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <span class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><text x="12" y="16" font-size="10" text-anchor="middle" fill="currentColor" font-family="Inter, sans-serif">C</text></svg>
+      </span>
+      <div>
+        <h4>Músicas livres de direitos</h4>
+        <p>Catálogo com bancos royalty-free prontos pra usar.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <span class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M10 9l5 3-5 3V9Z" fill="currentColor"/></svg>
+      </span>
+      <div>
+        <h4>Ouça no YouTube</h4>
+        <p>Cada referência conhecida com link direto pra escutar.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <span class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h3l2-6 4 12 2-6h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <div>
+        <h4>IA + Suno.ai</h4>
+        <p>Análise por IA e geração experimental via Suno.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="howItWorks" class="steps">
+    <div class="step">
+      <span class="step-number">01</span>
+      <h4>Conte sua ideia</h4>
+      <p>Cole o roteiro, envie um arquivo ou imagens do storyboard.</p>
+    </div>
+    <div class="step">
+      <span class="step-number">02</span>
+      <h4>Receba sugestões</h4>
+      <p>Nossa IA (ou o motor local) indica climas e trilhas que combinam com a cena.</p>
+    </div>
+    <div class="step">
+      <span class="step-number">03</span>
+      <h4>Ouça e ajuste</h4>
+      <p>Abra as referências direto no YouTube e escolha o caminho sonoro.</p>
+    </div>
+    <div class="step">
+      <span class="step-number">04</span>
+      <h4>Gere com Suno</h4>
+      <p>Simule — ou gere, quando a API oficial existir — a faixa final.</p>
+    </div>
+  </section>
+
+  <section id="loginCard" class="login-section">
+    <div class="card login-card">
+      <h2>Bem-vindo(a)</h2>
+      <p class="subtitle">Entre com sua conta Google ou continue como convidado pra testar o protótipo.</p>
+
+      <div id="googleBtnContainer"></div>
+      <p id="googleDisabledMsg" class="hint hidden">Login com Google não está configurado neste servidor (defina GOOGLE_CLIENT_ID no .env). Use o modo convidado abaixo.</p>
+
+      <div class="divider"><span>ou</span></div>
+
+      <form id="guestForm" class="guest-form">
+        <input id="guestName" type="text" placeholder="Seu nome (opcional)" />
+        <button type="submit" class="btn-primary">Continuar como convidado</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="landing-footer">
+    <div class="brand brand-footer">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="/assets/logo-mark.png" alt="" class="logo-img" />
+      </span>
+      <span class="brand-name-small">Trilha <em>filme generator</em></span>
+    </div>
+    <p class="landing-footer-tag">Mais filmes. Mais ideias. Mais emoções.</p>
+    <p class="landing-footer-note">MVP — protótipo funcional para validação da ideia.</p>
+  </footer>
+
+</section>
+
+<!-- ===================== APP PRINCIPAL ===================== -->
+<section id="appScreen" class="screen hidden">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="/assets/logo-mark.png" alt="" class="logo-img" />
+      </span>
+      <span class="brand-name">Trilha <em>filme generator</em></span>
+    </div>
+    <div id="userBox" class="user-box hidden">
+      <img id="userPic" class="user-pic hidden" src="" alt="" />
+      <span id="userName"></span>
+      <button id="logoutBtn" class="btn-ghost">Sair</button>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="card">
+      <h2>1. Envie seu roteiro ou storyboard</h2>
+      <p class="hint">Cole o texto do roteiro, envie um arquivo (.txt, .pdf ou .docx) e/ou envie imagens do storyboard com uma legenda descrevendo a cena.</p>
+
+      <form id="analyzeForm">
+        <label class="field-label" for="scriptText">Roteiro (texto colado)</label>
+        <textarea id="scriptText" rows="8" placeholder="Cole aqui o roteiro ou a sinopse/tratamento do vídeo..."></textarea>
+
+        <label class="field-label" for="scriptFile">Arquivo do roteiro (.txt, .pdf, .docx) — opcional</label>
+        <input id="scriptFile" type="file" accept=".txt,.md,.pdf,.docx" />
+
+        <label class="field-label" for="storyboardImages">Imagens do storyboard — opcional</label>
+        <input id="storyboardImages" type="file" accept="image/*" multiple />
+
+        <label class="field-label" for="storyboardCaption">Descrição do storyboard (o que acontece em cada quadro)</label>
+        <textarea id="storyboardCaption" rows="3" placeholder="Ex: Quadro 1 - protagonista corre pela rua à noite; Quadro 2 - encontra um velho amigo..."></textarea>
+
+        <button type="submit" class="btn-primary" id="analyzeBtn">Analisar e sugerir trilhas</button>
+      </form>
+      <p id="analyzeError" class="error hidden"></p>
+    </div>
+
+    <div id="resultsCard" class="card hidden">
+      <h2>2. Sugestões de trilha sonora</h2>
+      <p id="engineNote" class="hint"></p>
+      <p id="overallTheme" class="theme-note hidden"></p>
+      <div id="suggestionsList" class="suggestions-list"></div>
+
+      <h3>Bancos de música livres de direitos</h3>
+      <div id="sourcesList" class="sources-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>3. Gerar faixa com Suno.ai <span class="badge">experimental</span></h2>
+      <p class="hint">
+        A Suno não oferece uma API pública oficial (checado em set/2026), então esta seção simula o fluxo:
+        você "conecta" sua conta e pede a geração de uma faixa a partir do clima escolhido. Quando a Suno
+        (ou um parceiro autorizado) abrir uma API real, é só trocar o adaptador no back-end.
+      </p>
+      <form id="sunoForm" class="suno-form">
+        <input id="sunoToken" type="text" placeholder="Token/API key da sua conta Suno (opcional nesta simulação)" />
+        <input id="sunoPrompt" type="text" placeholder="Descreva a faixa que quer gerar (ex: trilha épica orquestral, 120 bpm)" />
+        <button type="submit" class="btn-secondary">Simular geração via Suno</button>
+      </form>
+      <div id="sunoResult" class="suno-result hidden"></div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>MVP — Trilha filme generator. Protótipo funcional para validação da ideia.</p>
+  </footer>
+
+</section>
+
+<script src="/app.js"></script>
+</body>
+</html>
